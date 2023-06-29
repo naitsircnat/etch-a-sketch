@@ -35,6 +35,9 @@ const button=document.getElementById("question");
 button.addEventListener("click", function() {
     var userInput=prompt ("How many squares per side?", 16)
     var userInputInteger=parseInt(userInput);
+    if (userInputInteger > 100) {
+        userInputInteger=100;
+    }
     numberOfGrids=userInputInteger*userInputInteger;
     removeElements();
     createGrids(numberOfGrids);
