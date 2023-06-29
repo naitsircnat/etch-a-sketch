@@ -1,0 +1,21 @@
+#gridsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+}
+
+.grid {
+    display: flex;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+}
+
+#buttonContainer {
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+} 
+
+
